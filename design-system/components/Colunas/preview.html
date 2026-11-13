@@ -1,0 +1,53 @@
+<!-- @dsCard group="Slides" height=820 subtitle="Título e linha fina | filete | texto, nos temas escuro e claro" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Colunas — preview</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  html, body { margin: 0; background: transparent; }
+  .stages { display: flex; flex-direction: column; gap: 12px; }
+  .stage { position: relative; overflow: hidden; }
+  .stage > .cah-slide { transform-origin: 0 0; }
+</style></head>
+<body>
+<div class="stages">
+<div class="stage"><section class="cah-slide cah-colunas" data-theme="escuro">
+    <img class="cah-icone" src="../../assets/Logotipos/cah-icone.svg" alt="">
+    <div class="cah-colunas__lado">
+      <h2 class="cah-titulo titulo-secao">Uma marca global,<br>mais clara e moderna</h2>
+      <p class="cah-colunas__linha-fina linha-fina">Nossa marca evoluiu para refletir o que nos tornamos: uma empresa mais moderna, precisa e conectada com as necessidades do mercado.</p>
+    </div>
+    <div class="cah-filete"></div>
+    <div class="cah-colunas__corpo cah-corpo corpo">
+      <p>Atualizamos a identidade do Carneiro &amp; Hannemann Law para sustentar expansão, padronizar comunicação e reforçar credibilidade em mercados internacionais. A nova assinatura reduz barreiras de entendimento, melhora consistência em canais digitais e acelera reconhecimento.</p>
+      <p>O resultado é uma marca mais clara, confiável e pronta para escalar. A mudança fortalece posicionamento e facilita a atuação em diferentes contextos — site, propostas, apresentações, networking e relacionamento com clientes internacionais.</p>
+      <p>A padronização reduz ruídos e retrabalho, elevando eficiência na produção de materiais e garantindo coerência em toda a jornada do cliente.</p>
+    </div>
+  </section></div>
+<div class="stage"><section class="cah-slide cah-colunas" data-theme="claro">
+    <img class="cah-icone" src="../../assets/Logotipos/cah-icone.svg" alt="">
+    <div class="cah-colunas__lado">
+      <h2 class="cah-titulo titulo-secao">Uma marca global,<br>mais clara e moderna</h2>
+      <p class="cah-colunas__linha-fina linha-fina">Nossa marca evoluiu para refletir o que nos tornamos: uma empresa mais moderna, precisa e conectada com as necessidades do mercado.</p>
+    </div>
+    <div class="cah-filete"></div>
+    <div class="cah-colunas__corpo cah-corpo corpo">
+      <p>Atualizamos a identidade do Carneiro &amp; Hannemann Law para sustentar expansão, padronizar comunicação e reforçar credibilidade em mercados internacionais. A nova assinatura reduz barreiras de entendimento, melhora consistência em canais digitais e acelera reconhecimento.</p>
+      <p>O resultado é uma marca mais clara, confiável e pronta para escalar. A mudança fortalece posicionamento e facilita a atuação em diferentes contextos — site, propostas, apresentações, networking e relacionamento com clientes internacionais.</p>
+      <p>A padronização reduz ruídos e retrabalho, elevando eficiência na produção de materiais e garantindo coerência em toda a jornada do cliente.</p>
+    </div>
+  </section></div>
+</div>
+<script>
+  function fit() {
+    document.querySelectorAll('.stage').forEach(function (st) {
+      var k = st.parentNode.clientWidth / 1920, s = st.firstElementChild;
+      s.style.transform = 'scale(' + k + ')';
+      st.style.height = Math.round(1080 * k) + 'px';
+    });
+  }
+  fit(); addEventListener('resize', fit);
+</script>
+</body>
+</html>

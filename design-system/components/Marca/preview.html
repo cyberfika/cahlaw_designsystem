@@ -1,0 +1,44 @@
+<!-- @dsCard group="Slides" height=420 subtitle="Catálogo de logotipos e da fonte Arsenal" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Marca — preview</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  html, body { margin: 0; background: transparent; }
+  .stages { display: flex; flex-direction: column; gap: 12px; }
+  .stage { position: relative; overflow: hidden; }
+  .stage > .cah-slide { transform-origin: 0 0; }
+</style></head>
+<body>
+<div class="stages">
+<div class="stage"><section class="cah-slide cah-marca" data-theme="escuro">
+    <h2 class="cah-marca__titulo rotulo" style="font-weight:400">Ícones</h2>
+    <img class="cah-marca__sigla-neg" src="../../assets/Logotipos/cah-sigla-negativo.svg" alt="Sigla negativa">
+    <img class="cah-marca__sigla-pos" src="../../assets/Logotipos/cah-sigla-positivo.svg" alt="Sigla positiva">
+    <img class="cah-marca__selo" src="../../assets/Logotipos/cah-selo-10anos.svg" alt="Selo 10 anos">
+    <img class="cah-marca__completo-neg" src="../../assets/Logotipos/cah-completo-negativo.svg" alt="Logotipo completo negativo">
+    <img class="cah-marca__completo-pos" src="../../assets/Logotipos/cah-completo-positivo.svg" alt="Logotipo completo positivo">
+    <img class="cah-marca__icone" src="../../assets/Logotipos/cah-icone.svg" alt="Símbolo">
+    <p class="cah-marca__rotulo rotulo">Fonte / Tipografia:</p>
+    <div class="cah-marca__fontes">
+      <span style="font-weight:700">Arsenal Bold</span>
+      <span style="font-weight:700;font-style:italic">Arsenal Bold Itálico</span>
+      <span style="font-style:italic">Arsenal Normal</span>
+      <span style="font-style:italic">Arsenal Normal Itálico</span>
+    </div>
+    <img class="cah-faixas" src="../../assets/Grafismos/faixas-douradas.svg" alt="">
+  </section></div>
+</div>
+<script>
+  function fit() {
+    document.querySelectorAll('.stage').forEach(function (st) {
+      var k = st.parentNode.clientWidth / 1920, s = st.firstElementChild;
+      s.style.transform = 'scale(' + k + ')';
+      st.style.height = Math.round(1080 * k) + 'px';
+    });
+  }
+  fit(); addEventListener('resize', fit);
+</script>
+</body>
+</html>

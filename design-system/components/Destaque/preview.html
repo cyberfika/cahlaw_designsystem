@@ -1,0 +1,37 @@
+<!-- @dsCard group="Slides" height=420 subtitle="Título à esquerda, chamada e texto à direita" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Destaque — preview</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  html, body { margin: 0; background: transparent; }
+  .stages { display: flex; flex-direction: column; gap: 12px; }
+  .stage { position: relative; overflow: hidden; }
+  .stage > .cah-slide { transform-origin: 0 0; }
+</style></head>
+<body>
+<div class="stages">
+<div class="stage"><section class="cah-slide cah-destaque" data-theme="escuro">
+    <img class="cah-icone" src="../../assets/Logotipos/cah-icone.svg" alt="">
+    <h2 class="cah-destaque__titulo cah-titulo titulo-secao">Governança e crescimento<br>com segurança.</h2>
+    <div class="cah-filete"></div>
+    <div class="cah-destaque__texto">
+      <h3 class="destaque">Visão de longo alcance, execução precisa</h3>
+      <div class="cah-corpo corpo"><p>Atuamos com a mesma lógica de uma águia-real: visão ampla para antecipar cenários, precisão para decidir rápido e força para sustentar a rota até o resultado. Nossa experiência em governança, compliance e regulação transforma risco em vantagem competitiva e crescimento em escala global.</p></div>
+    </div>
+    <img class="cah-faixas" src="../../assets/Grafismos/faixas-douradas.svg" alt="">
+  </section></div>
+</div>
+<script>
+  function fit() {
+    document.querySelectorAll('.stage').forEach(function (st) {
+      var k = st.parentNode.clientWidth / 1920, s = st.firstElementChild;
+      s.style.transform = 'scale(' + k + ')';
+      st.style.height = Math.round(1080 * k) + 'px';
+    });
+  }
+  fit(); addEventListener('resize', fit);
+</script>
+</body>
+</html>

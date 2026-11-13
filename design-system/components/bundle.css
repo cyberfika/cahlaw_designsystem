@@ -1,0 +1,70 @@
+/* CAH Law — layouts de slide. Canvas 1920 × 1080 (1pt do PPT = 2px).
+   Requer tokens.css (cores, fontes, classes de estilo de texto). */
+
+.cah-slide {
+  position: relative;
+  width: var(--slide-largura);
+  height: var(--slide-altura);
+  overflow: hidden;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: var(--font-arsenal);
+  border-radius: var(--raio-nenhum);
+}
+.cah-slide *, .cah-slide *::before, .cah-slide *::after { box-sizing: border-box; }
+.cah-slide h1, .cah-slide h2, .cah-slide h3, .cah-slide p { margin: 0; }
+.cah-slide > * { position: absolute; }
+
+/* Elementos comuns */
+.cah-aguia { max-width: none; pointer-events: none; user-select: none; }
+.cah-icone { left: var(--margem-icone-x); top: var(--margem-icone-y); width: var(--icone-largura); height: var(--icone-altura); object-fit: contain; object-position: left top; }
+.cah-faixas { right: var(--margem-faixas); bottom: 0; width: 359px; height: 206px; }
+.cah-filete { width: 0; border-left: var(--filete-espessura) solid var(--filete); }
+.cah-titulo { color: var(--titulo); text-wrap: balance; }
+.cah-corpo p + p { margin-top: var(--espaco-paragrafo); }
+
+/* Capa — slides 1 e 2 */
+.cah-capa .cah-aguia { left: -858px; top: 384px; width: 3188px; height: 986px; }
+.cah-capa__logo { left: 1094px; top: 420px; width: 268px; height: 158px; object-fit: contain; }
+.cah-capa__selo { left: 1436px; top: 496px; width: 142px; height: 86px; object-fit: contain; }
+.cah-capa--completo .cah-capa__logo { left: 974px; top: 420px; width: 376px; height: 164px; }
+
+/* Texto — slide 3 */
+.cah-texto .cah-aguia { left: -854px; top: -58px; width: 2296px; height: 1292px; }
+.cah-texto .cah-filete { left: 968px; top: 362px; height: 452px; }
+.cah-texto__titulo { left: 1094px; top: 362px; width: 606px; }
+.cah-texto__corpo { left: 1084px; top: 512px; width: 668px; }
+
+/* Frase — slide 4 */
+.cah-frase .cah-aguia { left: -588px; top: -212px; width: 2296px; height: 1292px; }
+.cah-frase__texto { left: 324px; top: 476px; width: 1294px; text-align: center; text-transform: uppercase; }
+
+/* Colunas — slides 5 (claro) e 6 (escuro) */
+.cah-colunas__lado { left: 188px; top: 238px; width: 532px; display: flex; flex-direction: column; gap: var(--espaco-titulo-linha-fina); text-align: right; }
+.cah-colunas__linha-fina { color: var(--texto-linha-fina); }
+.cah-colunas .cah-filete { left: 820px; top: 254px; height: 598px; }
+.cah-colunas__corpo { left: 934px; top: 238px; width: var(--coluna-texto); }
+
+/* Destaque — slide 7 */
+.cah-destaque__titulo { left: 146px; top: 374px; width: var(--coluna-titulo); text-align: right; }
+.cah-destaque .cah-filete { left: 844px; top: 386px; height: 320px; }
+.cah-destaque__texto { left: 960px; top: 374px; width: 768px; display: flex; flex-direction: column; gap: var(--espaco-destaque-corpo); }
+
+/* Encerramento — slide 8 */
+.cah-encerramento .cah-aguia { left: -862px; top: -78px; width: 3188px; height: 986px; }
+.cah-encerramento__logo { left: 262px; top: 748px; width: 376px; height: 164px; object-fit: contain; }
+.cah-encerramento .cah-filete { left: 1206px; top: 812px; height: 100px; border-left-color: var(--filete-rodape); }
+.cah-encerramento__contato { left: 1144px; top: 860px; width: 526px; text-align: right; color: var(--texto); }
+
+/* Marca — slide 9 (catálogo de logotipos e fonte) */
+.cah-marca { background: var(--cinza-medio); color: var(--azul-fundo); }
+.cah-marca__titulo { left: 240px; top: 78px; width: 1440px; text-align: center; }
+.cah-marca img { object-fit: contain; }
+.cah-marca__sigla-neg { left: 164px; top: 208px; width: 304px; height: 180px; }
+.cah-marca__sigla-pos { left: 720px; top: 208px; width: 304px; height: 180px; }
+.cah-marca__selo { left: 1366px; top: 238px; width: 184px; height: 112px; }
+.cah-marca__completo-neg { left: 152px; top: 428px; width: 424px; height: 184px; }
+.cah-marca__completo-pos { left: 730px; top: 426px; width: 428px; height: 186px; }
+.cah-marca__icone { left: 1374px; top: 428px; width: 124px; height: 248px; }
+.cah-marca__rotulo { left: 164px; top: 778px; width: 470px; }
+.cah-marca__fontes { left: 622px; top: 780px; width: 960px; display: flex; flex-direction: column; gap: 14px; font-size: 28px; line-height: 1.2; }

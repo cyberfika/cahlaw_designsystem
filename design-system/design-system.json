@@ -1,0 +1,166 @@
+{
+ "v": 3,
+ "layout": "files",
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-13T12:10:00Z"
+ },
+ "title": "CAH Law",
+ "namespace": "CAH",
+ "libraries": [],
+ "sections": {},
+ "groups": [
+  "Logotipos",
+  "Grafismos",
+  "Imagens"
+ ],
+ "assetGroups": {
+  "Logotipos": {
+   "name": "Logotipos",
+   "tile": "m",
+   "order": [
+    "cah-sigla-negativo.svg",
+    "cah-sigla-positivo.svg",
+    "cah-sigla-negativo.png",
+    "cah-completo-negativo.svg",
+    "cah-completo-positivo.svg",
+    "cah-sigla-10anos-negativo.svg",
+    "cah-sigla-10anos-positivo.svg",
+    "cah-completo-10anos-negativo.svg",
+    "cah-completo-10anos-positivo.svg",
+    "cah-icone.svg",
+    "cah-selo-10anos.svg"
+   ],
+   "files": {
+    "cah-sigla-negativo.svg": {
+     "name": "cah-sigla-negativo.svg",
+     "blob": "9d090349602b2f58678a1cf7d67475c2",
+     "size": 5846,
+     "type": "image/svg+xml"
+    },
+    "cah-sigla-positivo.svg": {
+     "name": "cah-sigla-positivo.svg",
+     "blob": "70d9b27484e3ef5084f7b7defb825bb9",
+     "size": 5846,
+     "type": "image/svg+xml"
+    },
+    "cah-sigla-negativo.png": {
+     "name": "cah-sigla-negativo.png",
+     "blob": "4a5bd3f2aec2b95a27d9dea3a7ac40ea",
+     "size": 108027,
+     "type": "image/png"
+    },
+    "cah-completo-negativo.svg": {
+     "name": "cah-completo-negativo.svg",
+     "blob": "d686701b718d5a99d90f5df1400d0ce1",
+     "size": 13004,
+     "type": "image/svg+xml"
+    },
+    "cah-completo-positivo.svg": {
+     "name": "cah-completo-positivo.svg",
+     "blob": "b30637ab569b04d243019cf39ae8532d",
+     "size": 13068,
+     "type": "image/svg+xml"
+    },
+    "cah-sigla-10anos-negativo.svg": {
+     "name": "cah-sigla-10anos-negativo.svg",
+     "blob": "2c2394ecdcaa7e4114cc3620ff937fd0",
+     "size": 9054,
+     "type": "image/svg+xml"
+    },
+    "cah-sigla-10anos-positivo.svg": {
+     "name": "cah-sigla-10anos-positivo.svg",
+     "blob": "b67b201bc071500b830d3d0cdf028b32",
+     "size": 9591,
+     "type": "image/svg+xml"
+    },
+    "cah-completo-10anos-negativo.svg": {
+     "name": "cah-completo-10anos-negativo.svg",
+     "blob": "8f8828302b4e1f44f40a02c3b02aad41",
+     "size": 16251,
+     "type": "image/svg+xml"
+    },
+    "cah-completo-10anos-positivo.svg": {
+     "name": "cah-completo-10anos-positivo.svg",
+     "blob": "8fbb72b30c10064a4a463c034893f021",
+     "size": 16314,
+     "type": "image/svg+xml"
+    },
+    "cah-icone.svg": {
+     "name": "cah-icone.svg",
+     "blob": "47b0097d9a04a9ab9f53e3fd89b1a74e",
+     "size": 4850,
+     "type": "image/svg+xml"
+    },
+    "cah-selo-10anos.svg": {
+     "name": "cah-selo-10anos.svg",
+     "blob": "a48b0aa2e25799163bc6e81ff1475295",
+     "size": 4017,
+     "type": "image/svg+xml"
+    }
+   }
+  },
+  "Grafismos": {
+   "name": "Grafismos",
+   "tile": "s",
+   "order": [
+    "faixas-douradas.svg"
+   ],
+   "files": {
+    "faixas-douradas.svg": {
+     "name": "faixas-douradas.svg",
+     "blob": "c217c7c78ccc9506b38c2de3de798331",
+     "size": 2127,
+     "type": "image/svg+xml"
+    }
+   }
+  },
+  "Imagens": {
+   "name": "Imagens",
+   "tile": "l",
+   "order": [
+    "aguia-faixa-capa.png",
+    "aguia-fundo-conteudo.png",
+    "aguia-fundo-mestre.png",
+    "aguia-fundo-layout.png"
+   ],
+   "files": {
+    "aguia-faixa-capa.png": {
+     "name": "aguia-faixa-capa.png",
+     "blob": "8efc3880d12e3f87c96f3b168e96b03b",
+     "size": 539737,
+     "type": "image/png"
+    },
+    "aguia-fundo-conteudo.png": {
+     "name": "aguia-fundo-conteudo.png",
+     "blob": "1b51ff2221a5d71ac681fdb72e88c312",
+     "size": 1316637,
+     "type": "image/png"
+    },
+    "aguia-fundo-mestre.png": {
+     "name": "aguia-fundo-mestre.png",
+     "blob": "26de14ecfe281a0de8be03afe297d404",
+     "size": 1368413,
+     "type": "image/png"
+    },
+    "aguia-fundo-layout.png": {
+     "name": "aguia-fundo-layout.png",
+     "blob": "5f0e2260c10a9c3c76aee12172a24f0a",
+     "size": 1339714,
+     "type": "image/png"
+    }
+   }
+  }
+ },
+ "blobs": {},
+ "docs": {
+  "readme": "project/README.md",
+  "sections": []
+ },
+ "lastChange": {
+  "by": "Claude",
+  "at": "2026-11-13T12:10:00Z",
+  "via": "Claude Code",
+  "note": "Sistema criado a partir do Cah_Adv_PPT.pptx e do Manual da Marca."
+ }
+}

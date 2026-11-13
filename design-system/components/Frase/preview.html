@@ -1,0 +1,33 @@
+<!-- @dsCard group="Slides" height=420 subtitle="Uma frase de efeito em caixa alta" -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Frase — preview</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  html, body { margin: 0; background: transparent; }
+  .stages { display: flex; flex-direction: column; gap: 12px; }
+  .stage { position: relative; overflow: hidden; }
+  .stage > .cah-slide { transform-origin: 0 0; }
+</style></head>
+<body>
+<div class="stages">
+<div class="stage"><section class="cah-slide cah-frase" data-theme="escuro">
+    <img class="cah-aguia" src="../../assets/Imagens/aguia-fundo-conteudo.png" alt="">
+    <img class="cah-icone" src="../../assets/Logotipos/cah-icone.svg" alt="">
+    <h2 class="cah-frase__texto cah-titulo titulo-frase">Visão de longo alcance, execução precisa</h2>
+    <img class="cah-faixas" src="../../assets/Grafismos/faixas-douradas.svg" alt="">
+  </section></div>
+</div>
+<script>
+  function fit() {
+    document.querySelectorAll('.stage').forEach(function (st) {
+      var k = st.parentNode.clientWidth / 1920, s = st.firstElementChild;
+      s.style.transform = 'scale(' + k + ')';
+      st.style.height = Math.round(1080 * k) + 'px';
+    });
+  }
+  fit(); addEventListener('resize', fit);
+</script>
+</body>
+</html>

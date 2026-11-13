@@ -1,0 +1,45 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>CAH Law — capa</title>
+<link rel="stylesheet" href="../../tokens.css">
+<link rel="stylesheet" href="../bundle.css">
+<style>
+  html, body { margin: 0; background: var(--fundo); }
+  .cover { position: relative; width: 960px; height: 288px; overflow: hidden; background: var(--fundo); }
+  .cover svg { position: absolute; left: 0; top: 0; }
+  .ouro { fill: var(--dourado-institucional); }
+  .ouro-claro { fill: var(--dourado-claro); }
+  .tinta { fill: var(--texto); }
+  .filete { fill: var(--azul-filete); }
+  .chao { fill: var(--fundo); }
+  .nome { position: absolute; left: 40px; bottom: 40px; max-width: 440px; display: flex; flex-direction: column; gap: 10px; }
+  .nome h1 { margin: 0; font-family: var(--font-arsenal); font-weight: 700; font-style: italic; font-size: 100px; line-height: .95; color: var(--texto); }
+  .nome p { margin: 0; font-family: var(--font-arsenal); font-style: italic; font-size: 14px; color: var(--texto-linha-fina); }
+</style></head>
+<body>
+<div class="cover">
+  <!--
+    blocks: dourado-institucional 280×216 slab, texto 120×288 band, azul-filete 80×144, dourado-claro 140×72; ground = fundo
+    arrangement: one tall gold slab bleeding off the top, a full-height tint band bleeding right, two satellites bleeding off the bottom; all square (raio-nenhum)
+    pattern: two diagonal bands cut from the gold slab in the ground colour — the brand's own faixas douradas, at their ~39° angle
+    scales: band width 32px, pitch 64px; block sides in 8px multiples; corners raio-nenhum (0px)
+  -->
+  <svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+    <defs><clipPath id="slab"><rect x="560" y="0" width="280" height="216"/></clipPath></defs>
+    <rect class="ouro" x="560" y="0" width="280" height="216"/>
+    <g clip-path="url(#slab)">
+      <polygon class="chao" points="520,216 552,216 822,0 790,0"/>
+      <polygon class="chao" points="584,216 616,216 886,0 854,0"/>
+    </g>
+    <rect class="tinta" x="840" y="0" width="120" height="288"/>
+    <rect class="filete" x="480" y="144" width="80" height="144"/>
+    <rect class="ouro-claro" x="560" y="216" width="140" height="72"/>
+  </svg>
+  <div class="nome">
+    <h1>CAH Law</h1>
+    <p>Visão de longo alcance, execução precisa.</p>
+  </div>
+</div>
+</body>
+</html>
